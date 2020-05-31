@@ -1,13 +1,189 @@
 <!DOCTYPE html>
-<html>
-	<head lang="en">
+<html lang="en">
+	<head>
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Calculator by Brandon Suen</title>
-		<link rel="icon" href="favicon.png" />
+		<title>Car Survey Form by Brandon Suen</title>
+		<link href="./favicon.png" rel="icon" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Open+Sans&display=swap"
+			rel="stylesheet"
+		/>
+		<link href="./index.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body>
+		<div id="particles-js"></div>
+		<section id="content">
+			<div id="title-container">
+				<h1 id="title">Car Owner Survey</h1>
+			</div>
+			<p id="description">A survey about you and your car</p>
+			<p id="note">
+				Note: This survey doesn't actually submit anywhere and was created for
+				the purposes of the freeCodeCamp curriculum
+			</p>
+			<form id="survey-form">
+				<label for="name" id="name-label">Your name:</label>
+				<br />
+				<input
+					id="name"
+					name="name"
+					placeholder="Jane Doe"
+					required
+					type="text"
+				/>
+				<br />
+				<br />
+				<label for="email" id="email-label">Your email:</label>
+				<br />
+				<input
+					id="email"
+					name="email"
+					placeholder="janedoe@provider.com"
+					required
+					type="email"
+				/>
+				<br />
+				<br />
+				<label for="manufacturer">Your car's manufacturer:</label>
+				<br />
+				<select id="dropdown" name="manufacturer">
+					<option value="acura">Acura</option>
+					<option value="audi">Audi</option>
+					<option value="chevrolet">Chevrolet</option>
+					<option value="dodge">Dodge</option>
+					<option value="ferrari">Ferrari</option>
+					<option value="ford">Ford</option>
+					<option value="honda">Honda</option>
+					<option value="jeep">Jeep</option>
+					<option value="lamborghini">Lamborghini</option>
+					<option value="lexus">Lexus</option>
+					<option value="mclaren">McLaren</option>
+					<option value="mercedes">Mercedes</option>
+					<option value="nissan">Nissan</option>
+					<option value="porsche">Porsche</option>
+					<option value="subaru">Subaru</option>
+					<option value="tesla">Tesla</option>
+					<option value="toyota">Toyota</option>
+					<option value="other">Other</option>
+				</select>
+				<br />
+				<br />
+				<label for="model-year" id="number-label">Your car's model year:</label>
+				<br />
+				<input
+					id="number"
+					max="2020"
+					min="1900"
+					name="model-year"
+					placeholder="2010"
+					required
+					type="number"
+				/>
+				<br />
+				<br />
+				<label for="purchase-year">The year you purchased your car:</label>
+				<br />
+				<input
+					max="2020"
+					min="1900"
+					name="purchase-year"
+					placeholder="2010"
+					required
+					type="number"
+				/>
+				<br />
+				<br />
+				<label for="satisfaction"
+					>How satisfied are you with your current car?</label
+				>
+				<br />
+				<input name="satisfaction" type="radio" value="very-satisfied" />
+				<label for="very-satisfied">Very satisfied</label>
+				<br />
+				<input name="satisfaction" type="radio" value="satisfied" />
+				<label for="satisfied">Satisfied</label>
+				<br />
+				<input name="satisfaction" type="radio" value="somewhat" />
+				<label for="somewhat">Somewhat satisfied</label>
+				<br />
+				<input name="satisfaction" type="radio" value="unsatisfied" />
+				<label for="unsatisfied">Unsatisfied</label>
+				<br />
+				<input name="satisfaction" type="radio" value="very-unsatisfied" />
+				<label for="very-unsatisfied">Very unsatisfied</label>
+				<br />
+				<br />
+				<label for="manufacturer-opinion"
+					>Which car manufacturers do you have a positive opinion of?</label
+				>
+				<input name="manufacturer-opinion" type="checkbox" value="acura" />
+				<label for="acura">Acura</label>
+				<br />
+				<input name="manufacturer-opinion" type="checkbox" value="audi" />
+				<label for="audi">Audi</label>
+				<br />
+				<input name="manufacturer-opinion" type="checkbox" value="chevrolet" />
+				<label for="chevrolet">Chevrolet</label>
+				<br />
+				<input name="manufacturer-opinion" type="checkbox" value="dodge" />
+				<label for="dodge">Dodge</label>
+				<br />
+				<input name="manufacturer-opinion" type="checkbox" value="ferrari" />
+				<label for="ferrari">Ferrari</label>
+				<br />
+				<input name="manufacturer-opinion" type="checkbox" value="ford" />
+				<label for="ford">Ford</label>
+				<br />
+				<input name="manufacturer-opinion" type="checkbox" value="honda" />
+				<label for="honda">Honda</label>
+				<br />
+				<input name="manufacturer-opinion" type="checkbox" value="jeep" />
+				<label for="jeep">Jeep</label>
+				<br />
+				<input
+					name="manufacturer-opinion"
+					type="checkbox"
+					value="lamborghini"
+				/>
+				<label for="lamborghini">Lamborghini</label>
+				<br />
+				<input name="manufacturer-opinion" type="checkbox" value="lexus" />
+				<label for="lexus">Lexus</label>
+				<br />
+				<input name="manufacturer-opinion" type="checkbox" value="mclaren" />
+				<label for="mclaren">McLaren</label>
+				<br />
+				<input name="manufacturer-opinion" type="checkbox" value="mercedes" />
+				<label for="mercedes">Mercedes</label>
+				<br />
+				<input name="manufacturer-opinion" type="checkbox" value="nissan" />
+				<label for="nissan">Nissan</label>
+				<br />
+				<input name="manufacturer-opinion" type="checkbox" value="porsche" />
+				<label for="porsche">Porsche</label>
+				<br />
+				<input name="manufacturer-opinion" type="checkbox" value="subaru" />
+				<label for="subaru">Subaru</label>
+				<br />
+				<input name="manufacturer-opinion" type="checkbox" value="tesla" />
+				<label for="tesla">Tesla</label>
+				<br />
+				<input name="manufacturer-opinion" type="checkbox" value="toyota" />
+				<label for="toyota">Toyota</label>
+				<br />
+				<br />
+				<label for="comments">Additional comments:</label>
+				<br />
+				<textarea name="comments"></textarea>
+				<br />
+				<br />
+				<button id="submit" type="submit"><p>Submit</p></button>
+			</form>
+		</section>
+		<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+		<script src="./index.js"></script>
 		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 	</body>
 </html>
